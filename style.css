@@ -1,4 +1,4 @@
-body {
+rbody {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f7f7f7;
@@ -46,7 +46,7 @@ table {
 th, td {
     border: 1px solid #ccc;
     padding: 12px 10px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
