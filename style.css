@@ -16,6 +16,7 @@
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    backdrop-filter: blur(4px);
 }
 .btn-gmail:hover {
     background-color: #1DA851;
