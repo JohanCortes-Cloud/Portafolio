@@ -7,10 +7,10 @@
     font-weight: bold;
 }
 .btn-whatsapp:hover {
-    background-color: #B85940;
+    background-color: #3CBD2D;
 }
 .btn-gmail {
-    background-color: #B85940;
+    background-color: #F24213;
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
@@ -19,7 +19,7 @@
     backdrop-filter: blur(4px);
 }
 .btn-gmail:hover {
-    background-color: #1DA851;
+    background-color: #F28E13;
 }
 
 
