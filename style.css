@@ -106,7 +106,7 @@ tbody tr:last-child td:last-child {
     border-left: 4px solid #2c7be5;
     border-radius: 4px;
 }
-#contador-visitas {
+#texto-inferior-izquierda  {
     position: fixed;
     right: 20px;
     bottom: 20px;
