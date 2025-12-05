@@ -84,6 +84,34 @@ tbody tr:last-child td:first-child {
 tbody tr:last-child td:last-child {
     border-bottom-right-radius: 12px;
 }
+/* Fondo oscuro */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Caja blanca */
+.modal-contenido {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* Botón cerrar */
+.cerrar {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
 
 
 
