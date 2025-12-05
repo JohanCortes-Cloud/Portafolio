@@ -228,5 +228,27 @@
         });
     </script>
 
+
+<div id="contador-visitas">
+    Visitas: <span id="num-visitas">0</span>
+</div>
+
+<script>
+    // Crear un contador único basado en tu página o nombre
+    const namespace = "johan_cortes_cv";
+    const key = "visitas";
+
+    // Llamar al API
+    fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("num-visitas").textContent = data.value;
+        });
+</script>
+
+
+
+
+    
 </body>
 </html>
