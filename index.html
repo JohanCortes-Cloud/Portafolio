@@ -166,6 +166,35 @@ aplicable.
         <p>GitHub: <a href="#" target="_blank">Tu usuario</a></p>
     </section>
 
+
+
+
+
+<script>
+    // Abrir modal
+    document.querySelector(".abrir-modal").addEventListener("click", function(e) {
+        e.preventDefault();
+        document.getElementById("modalFunciones").style.display = "block";
+    });
+
+    // Cerrar modal
+    document.querySelector(".cerrar").addEventListener("click", function() {
+        document.getElementById("modalFunciones").style.display = "none";
+    });
+
+    // Cerrar al hacer clic afuera
+    window.addEventListener("click", function(e) {
+        let modal = document.getElementById("modalFunciones");
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+</script>
+
+
+
+
+    
 </body>
 </html>
           
