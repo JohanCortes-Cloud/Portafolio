@@ -1,5 +1,5 @@
 .btn-whatsapp {
-    background-color:  rgba(37, 211, 102, 0.5);
+    background-color:  rgba(37, 211, 102, 0.7);
     color: black;
     padding: 10px 20px;
     border-radius: 8px;
@@ -7,10 +7,10 @@
     font-weight: bold;
 }
 .btn-whatsapp:hover {
-    background-color: rgba(76, 191, 63, 0.5);
+    background-color: rgba(76, 191, 63, 0.7);
 }
 .btn-gmail {
-    background-color: rgba(242, 66, 19,0.5);
+    background-color: rgba(242, 66, 19,0.2);
     color: black;
     padding: 10px 20px;
     border-radius: 8px;
@@ -19,7 +19,7 @@
     
 }
 .btn-gmail:hover {
-    background-color: rgba(232, 195, 46,0.5);
+    background-color: rgba(232, 195, 46,0.2);
 }
 
 .btn-pdf {
