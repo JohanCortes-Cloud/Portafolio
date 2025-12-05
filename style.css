@@ -10,7 +10,7 @@
     background-color: rgba(76, 191, 63, 0.5);
 }
 .btn-gmail {
-    background-color: #F24213;
+    background-color: rgba(242, 66, 19,0.5);
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
@@ -19,10 +19,21 @@
     
 }
 .btn-gmail:hover {
-    background-color: #F28E13;
+    background-color: rgba(232, 195, 46,0.5);
 }
 
-
+.btn-pdf {
+    background-color: rgba(4, 99, 222,0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.btn-pdf:hover {
+    background-color: rgba(56, 132, 245,0.5);
+}
 
 rbody {
     margin: 0;
