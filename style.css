@@ -9,7 +9,17 @@
 .btn-whatsapp:hover {
     background-color: #1DA851;
 }
-
+.btn-gmail {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-gmail:hover {
+    background-color: #1DA851;
+}
 
 
 
