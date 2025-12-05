@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOHAN CORTES</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- ESTILO DEL BOTÓN --- */
+        .btn-funciones {
+            background: none;
+            border: none;
+            color: #0056b3;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .btn-funciones:hover {
+            color: #003d80;
+        }
+
+        /* --- CUADRO DE INFORMACIÓN --- */
+        .info-funciones {
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 4px solid #2c7be5;
+            border-radius: 4px;
+            background: rgba(0, 123, 255, 0.1);
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .info-visible {
+            display: block !important;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
 
@@ -43,9 +78,8 @@
 
             <button class="btn-funciones">Funciones / Actividades</button>
 
-            <div class="info-funciones" style="display:none;">
+            <div class="info-funciones">
                 <p>
-                    ⚙️ Ejemplo de funciones:<br>
                     - Realización de calibraciones.<br>
                     - Visitas en campo.<br>
                     - Elaboración de informes técnicos.<br>
@@ -61,10 +95,9 @@
 
             <button class="btn-funciones">Funciones / Actividades</button>
 
-            <div class="info-funciones" style="display:none;">
+            <div class="info-funciones">
                 <p>
-                    ⚙️ Escribe aquí las funciones:<br>
-                    - Ejemplo: Supervisión de procesos de calidad.<br>
+                    - Supervisión de procesos de calidad.<br>
                     - Auditorías internas.<br>
                     - Control documental.<br>
                 </p>
@@ -79,9 +112,8 @@
 
             <button class="btn-funciones">Funciones / Actividades</button>
 
-            <div class="info-funciones" style="display:none;">
+            <div class="info-funciones">
                 <p>
-                    ⚙️ Ejemplo de funciones:<br>
                     - Manejo de inventarios.<br>
                     - Cargue y descargue de mercancía.<br>
                     - Alistamiento de pedidos.<br>
@@ -92,9 +124,11 @@
     </section>
 
     <section id="educacion">
-        <h2>Formación Académica </h2>
-
+        <h2>Formación Académica</h2>
         <div class="contenido">
+
+            <!-- (Dejé tus tablas igual, sin modificar) -->
+
             <table>
                 <thead>
                     <tr>
@@ -163,6 +197,7 @@
                     </tr>
                 </tbody>
             </table>
+
         </div>
     </section>
 
@@ -173,15 +208,22 @@
         <p>GitHub: <a href="#" target="_blank">Tu usuario</a></p>
     </section>
 
-
-    <!-- JS QUE MANEJA TODOS LOS BOTONES -->
+    <!-- SCRIPT PARA LOS BOTONES -->
     <script>
-        document.querySelectorAll('.btn-funciones').forEach((btn, index) => {
+        document.querySelectorAll('.btn-funciones').forEach(btn => {
             btn.addEventListener('click', () => {
+
                 const info = btn.nextElementSibling;
 
-                info.style.display = 
-                    info.style.display === "none" ? "block" : "none";
+                // Alternar clase visible
+                info.classList.toggle('info-visible');
+
+                // Cambiar texto del botón
+                if (info.classList.contains('info-visible')) {
+                    btn.textContent = "Ocultar funciones";
+                } else {
+                    btn.textContent = "Funciones / Actividades";
+                }
             });
         });
     </script>
