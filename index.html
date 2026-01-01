@@ -45,4 +45,50 @@
             scale: 1.05;
         }
 
-        /* Contenedor del texto desp*
+        /* Contenedor del texto desplegable */
+        .contenido {
+            display: none;
+            padding: 20px;
+            margin-top: 60px;
+            background: white;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeIn 0.4s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BOTÓN -->
+    <div class="scroll-btn" onclick="mostrarContenido()">Sobre mí</div>
+
+    <!-- TEXTO DESPLEGABLE -->
+    <div class="contenido" id="info">
+        <h2>Sobre mí</h2>
+        <p>
+            ¡Hola! Soy Valen, técnica en mercadeo con experiencia como asesora comercial en perfumería
+            y en control administrativo en Dispapeles. Me apasiona el servicio al cliente, la creatividad digital
+            y mejorar la experiencia de compra. Busco crecer profesionalmente aplicando mis conocimientos en
+            ventas, marketing y atención personalizada.
+        </p>
+    </div>
+
+    <script>
+        function mostrarContenido(){
+            let info = document.getElementById("info");
+            // Alterna mostrar/ocultar
+            info.style.display = info.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
