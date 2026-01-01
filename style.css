@@ -160,7 +160,7 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
 .boton-deslizable {
     position: fixed;
     top: 10%;
-    left: -150px; /* empieza afuera de la pantalla */
+    left: -10px; /* empieza afuera de la pantalla */
     background-color: #054BB0;
     color: white;
     padding: 12px 20px;
