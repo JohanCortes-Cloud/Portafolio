@@ -152,3 +152,53 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
     border: 1px solid rgba(0, 123, 255, 0.3);
     backdrop-filter: blur(4px);
 }
+
+
+
+
+/* --- BOTÓN QUE SE MUEVE HORIZONTAL --- */
+.boton-deslizable {
+    position: fixed;
+    top: 10%;
+    left: -150px; /* empieza afuera de la pantalla */
+    background-color: #054BB0;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: deslizar 12s linear infinite;
+    z-index: 999;
+    white-space: nowrap;
+    transition: background .3s ease;
+}
+
+.boton-deslizable:hover {
+    background-color: #003d80;
+    animation-play-state: paused; /* SE DETIENE AL PASAR MOUSE */
+}
+
+/* ANIMACIÓN HORIZONTAL */
+@keyframes deslizar {
+    0% { left: -200px; }
+    100% { left: 110%; }
+}
+
+/* --- CONTENIDO QUE SE ABRE AL HACER CLIC --- */
+.contenido-slide {
+    display: none;
+    padding: 20px;
+    margin: 80px auto;
+    width: 80%;
+    background: rgba(0, 64, 122, 0.1);
+    border-left: 6px solid #054BB0;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.contenido-slide.visible {
+    display: block;
+    opacity: 1;
+}
