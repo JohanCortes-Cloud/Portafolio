@@ -105,7 +105,7 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
 /* PIE DE PÁGINA FLOTANTE */
 #texto-inferior-izquierda {
     position: fixed;
-    top: 20px;
+    top: 0px;
     left: 0px; /* inicia fuera de pantalla */
     background: rgba(0, 123, 255, 0.15);
     padding: 10px 15px;
@@ -122,7 +122,7 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
 /* Animación del movimiento */
 @keyframes moverHorizontal {
     0% {
-        left: 10px;
+        left: 100px;
     }
     100% {
         left: 100%;
