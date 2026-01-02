@@ -86,22 +86,7 @@
 
 <div id="texto-inferior-izquierda">Versión 2026</div>
 
-<script>
-document.querySelectorAll('.btn-funciones').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const info = btn.nextElementSibling;
-        info.style.display = info.style.display === "block" ? "none" : "block";
-        btn.textContent = info.style.display === "block" ? "Ocultar funciones" : "Funciones / Actividades";
-    });
-});
 
-const btnSlide = document.getElementById("btnSlide");
-const infoSlide = document.getElementById("infoSlide");
-btnSlide.addEventListener("click", () => {
-    infoSlide.classList.toggle("visible");
-    btnSlide.textContent = infoSlide.classList.contains("visible") ? "Cerrar" : "Sobre mí";
-});
-</script>
 
 </body>
 </html>
