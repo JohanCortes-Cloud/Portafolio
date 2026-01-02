@@ -126,7 +126,7 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
     transition: 0.3s;
 }
 .btn-funciones:hover {
-    background-color: #1b5daa;
+    background-color: #f2f2f2;
 }
 
 /* TEXTO OCULTO QUE SE ABRE */
