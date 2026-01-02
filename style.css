@@ -1,42 +1,3 @@
-/* BOTONES DE CONTACTO */
-.btn-whatsapp {
-    background-color: rgba(37, 211, 102, 0.8);
-    color: black;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.btn-whatsapp:hover {
-    background-color: rgba(76, 191, 63, 0.4);
-}
-
-.btn-gmail {
-    background-color: rgba(242, 66, 19, 0.8);
-    color: black;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.btn-gmail:hover {
-    background-color: rgba(232, 195, 46, 0.3);
-}
-
-.btn-pdf {
-    background-color: rgba(4, 99, 222, 0.8);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.btn-pdf:hover {
-    background-color: rgba(56, 132, 245, 0.4);
-}
 
 /* ESTILOS GLOBALES */
 body {
@@ -48,7 +9,7 @@ body {
 
 header {
     background: #000;
-    color: white;
+    color: gray;
     padding: 40px 20px;
     text-align: center;
 }
@@ -166,6 +127,44 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
     }
 }
 
+/* BOTONES DE CONTACTO */
+.btn-whatsapp {
+    background-color: rgba(37, 211, 102, 0.8);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-whatsapp:hover {
+    background-color: rgba(76, 191, 63, 0.4);
+}
 
+.btn-gmail {
+    background-color: rgba(242, 66, 19, 0.8);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-gmail:hover {
+    background-color: rgba(232, 195, 46, 0.3);
+}
+
+.btn-pdf {
+    background-color: rgba(4, 99, 222, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-pdf:hover {
+    background-color: rgba(56, 132, 245, 0.4);
+}
 
 
