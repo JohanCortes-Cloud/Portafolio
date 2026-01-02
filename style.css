@@ -117,6 +117,8 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
     animation: moverHorizontal 32s linear infinite;
     white-space: nowrap;
     z-index: 9999;
+    overflow: hidden;
+
 }
 
 /* Animación del movimiento */
