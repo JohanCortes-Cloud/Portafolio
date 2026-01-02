@@ -151,7 +151,7 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
     color: #003d80;
     border: 1px solid rgba(0, 123, 255, 0.3);
     backdrop-filter: blur(4px);
-    animation: moverHorizontal 10s linear infinite;
+    animation: moverHorizontal 32s linear infinite;
     white-space: nowrap;
     z-index: 9999;
 }
