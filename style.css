@@ -104,9 +104,9 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
 
 /* PIE DE PÁGINA FLOTANTE */
 #texto-inferior-izquierda {
-    position: fixed;
+    position: center;
     top: 0px;
-    left: 0px; /* inicia fuera de pantalla */
+    left: -10px; /* inicia fuera de pantalla */
     background: rgba(0, 123, 255, 0.15);
     padding: 10px 15px;
     border-radius: 8px;
