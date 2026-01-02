@@ -159,7 +159,7 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
 /* Animación del movimiento */
 @keyframes moverHorizontal {
     0% {
-        left: -200px;
+        left: 0px;
     }
     100% {
         left: 100%;
