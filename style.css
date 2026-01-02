@@ -142,8 +142,8 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
 /* PIE DE PÁGINA FLOTANTE */
 #texto-inferior-izquierda {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    top: 20px;
+    left: -200px; /* inicia fuera de pantalla */
     background: rgba(0, 123, 255, 0.15);
     padding: 10px 15px;
     border-radius: 8px;
@@ -151,6 +151,19 @@ tbody tr:last-child td:last-child { border-bottom-right-radius: 12px; }
     color: #003d80;
     border: 1px solid rgba(0, 123, 255, 0.3);
     backdrop-filter: blur(4px);
+    animation: moverHorizontal 10s linear infinite;
+    white-space: nowrap;
+    z-index: 9999;
+}
+
+/* Animación del movimiento */
+@keyframes moverHorizontal {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
 
